@@ -20,7 +20,7 @@ class swapper:
         self.setMap("B", mapB)
         return
 
-    def setMap(self, map):
+    def setMap(self, ab, map):
         #setting an individual map file
         return
 
