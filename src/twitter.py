@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os
 import subprocess as sub
 import urllib2
@@ -24,4 +26,23 @@ for i in contentTags:
     info = i.getText()
     info = info.replace("&amp;", "&")
     info = info.split(sep, 1)[0]
-    print info
+
+    lobby = info.split("maps", 1)[0]
+    rest = info.split("maps", 1)[1]
+    game = rest.split(":",1)[0]
+    game = game.replace(game[:2], '')
+    mapA = info.split("& ", 1)[0]  
+    mapA = mapA.split(": ", 1)[1]  
+    mapB = info.split("& ", 1)[1]
+
+    #stripppp
+    lobby = lobby.strip()
+    game = game.strip()
+    mapA = mapA.strip()
+    mapB = mapB.strip()
+    print "Lobby     :", lobby
+    if "Turf" not in lobby: 
+        print "Game Mode :", game
+    print "Map A     :", mapA
+    print "Map B     :", mapB
+    print '----------------------------------'
