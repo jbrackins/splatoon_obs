@@ -2,8 +2,9 @@
 
 class path:
     def __init__(self):
-        self.CURRENT_DIR = "/home/jubear/workspace/splatoon_obs/current/"
-        self.MAP_DIR = "/home/jubear/workspace/splatoon_obs/maps/"
+        #Change these to whatever directories you have these located...
+        self.CURRENT_DIR = "/home/jubear/Dropbox/Jubear/dev/splatmaps/current"
+        self.MAP_DIR = "/home/jubear/Dropbox/Jubear/dev/splatmaps/maps"
         
         self.MAP_A = "a.png"
         self.MAP_B = "b.png"
